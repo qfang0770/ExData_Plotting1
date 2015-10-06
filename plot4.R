@@ -28,6 +28,6 @@ plot(dataset$timeStamp,dataset$Voltage,type = "l", xlab = "datetime", ylab = "Vo
 plot(dataset$timeStamp,dataset$Sub_metering_1,type = "l", col = 1, xlab = "", ylab = "Energy Submetering")
 lines(dataset$timeStamp,dataset$Sub_metering_2,type = "l", col = 2)
 lines(dataset$timeStamp,dataset$Sub_metering_3,type = "l", col = 4)
-legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col = c(1,2,4))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c(1,2,4))
 plot(dataset$timeStamp,dataset$Global_reactive_power,type = "l", xlab = "datetime")
 dev.off()
